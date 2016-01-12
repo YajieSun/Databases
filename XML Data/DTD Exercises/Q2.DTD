@@ -1,3 +1,8 @@
+<!-- In this question, you are to create a DTD for a different version of the data 
+	set drawn from the Stanford course catalog. This version encodes the data using 
+	ID and IDREF(S) attributes. The XML data is here. Write a DTD for the XML data set. 
+-->
+
 <!ELEMENT Course_Catalog (Department*)>
 <!ELEMENT Department (Title, Course*, (Professor|Lecturer)*)>
 <!ATTLIST Department Code ID #REQUIRED Chair IDREF #REQUIRED>
